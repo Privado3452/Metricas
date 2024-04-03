@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metricas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>     
+            <nav class="menu">
+                <a href="#section1">Visión General</a>
+                <a href="#section2">Modelo de Analisis</a>
+                <a href="#section3">Modelo de Diseño</a>
+                <a href="#section4">Metricas de Codigo Fuente</a>
+                <a href="#section5">Metricas para pruebas</a>
+                <a href="#section6">Metricas de mantenimiento</a>
+            </nav>
+        </div>
+    </header>
+    <h1 class="title">Metricas</h1>
+    <img src="mc3a9tricas.png" alt="img-1" class="img">
+    
+    <div class="capa"></div>
+    <!--menu-->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="#section1">visión General</a>
+                <a href="#section2">Modelo de Analisis</a>
+                <a href="#section3">Modelo de Diseño</a>
+                <a href="#section4">Metricas de Codigo Fuente</a>
+                <a href="#section5">Metricas para pruebas</a>
+                <a href="#section6">Metricas de mantenimiento</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    <section id="section1">
+        <div class="content">
+            <h2 class="section-title">Visión General</h2>
+            <p class="section-content">McCall y Cavano establecieron un conjunto inicial de factores de calidad en 1978, considerándolos como los primeros pasos hacia el desarrollo de métricas de calidad del software. Estos factores evalúan el software desde tres perspectivas: operación, revisión y transición del producto. Su marco de trabajo proporciona herramientas para identificar aspectos importantes del proyecto, evaluar el progreso del desarrollo de software y fomentar la interacción del personal de calidad en el proceso de desarrollo. Aunque el campo ha experimentado cambios significativos desde entonces, los atributos que indican la calidad del software permanecen relevantes. <br><br>
+
+                En cuanto a las medidas de calidad, se destacan la corrección, facilidad de mantenimiento, integridad y facilidad de uso como indicadores útiles. Estas medidas se basan en diferentes métricas, como el número de defectos por KLDC para la corrección, el tiempo medio de cambio para la facilidad de mantenimiento y la probabilidad de ataques para la integridad. <br><br>
+                
+                La eficacia de la eliminación de defectos se presenta como una métrica beneficiosa a nivel de proyecto y proceso. Se define como la proporción de errores encontrados antes de la entrega del software sobre el número total de defectos encontrados, lo que puede indicar la habilidad del equipo para filtrar errores antes de la entrega. <br><br>
+                
+                Los factores de calidad propuestos por McCall se agrupan en dos categorías principales: aquellos que se pueden medir directamente y aquellos que se pueden medir indirectamente. Estos factores incluyen corrección, fiabilidad, eficiencia, integridad, facilidad de mantenimiento, flexibilidad, facilidad de prueba, portabilidad, reusabilidad e interoperabilidad.<br><br>
+                
+                Además, Hewlett-Packard desarrolló el conjunto FURPS de factores de calidad, que abarca funcionalidad, usabilidad, confiabilidad, rendimiento y capacidad de soporte del software. Estos factores consideran aspectos como la generalidad de las funciones, la estética, la frecuencia y gravedad de los fallos, la velocidad de procesamiento y la capacidad de ampliación del programa, entre otros.
+                
+                
+                
+                </p>
+        
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="content">
+            <h2 class="section-title">Modelo de Analisis</h2>
+            <p class="section-content">En la fase de obtención de requisitos y establecimiento del fundamento para el diseño, es crucial tener una visión interna de la calidad del modelo de análisis. Aunque hay escasas métricas disponibles, es posible adaptarlas para evaluar un proyecto específico, considerando que el tamaño y la complejidad del diseño suelen estar interrelacionados. Se presentan métricas orientadas a la función, la métrica bang y métricas de calidad de especificación. <br><br>
+
+                La métrica de punto de función (PF) puede usarse para predecir el tamaño del sistema obtenido del modelo de análisis. Se considera una representación simple del modelo para calcular el PF, utilizando medidas clave como entradas y salidas de usuario, consultas del usuario, archivos y interfaces externas. A partir de estos datos, se calcula el PF ajustado para estimar el tamaño de la implementación del sistema. <br><br>
+                
+                La métrica Bang, desarrollada por Tom DeMarco, proporciona una indicación del tamaño del software a implementar. Se evalúan primitivas del modelo de análisis, como primitivas funcionales, elementos de datos y objetos, para calcular la métrica Bang. Esta métrica ayuda a determinar si una aplicación pertenece al dominio de función o de datos, lo que influye en la complejidad del sistema. <br><br>
+                
+                Para evaluar la calidad de la especificación de requisitos, se proponen métricas como la especificidad, corrección, compleción, comprensión y otras. Se pueden utilizar fórmulas para calcular características específicas, como la especificidad de los requisitos o la compleción de los requisitos funcionales, basadas en la consistencia de interpretación de los revisores y la validación de los requisitos. <br><br>
+                
+                En resumen, estas métricas proporcionan herramientas para evaluar la calidad y estimar el tamaño y la complejidad del sistema durante la fase de análisis y diseño del proyecto.
+                
+                
+                
+                </p>
+
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="content">
+            <h2 class="section-title">Modelo de Diseño</h2>
+            <p class="section-content"> 
+
+                <b>Métricas de diseño de alto nivel:</b> Se centran en la estructura del programa, destacando la arquitectura y la eficiencia de los módulos. Se proponen medidas de complejidad estructural, de datos y del sistema para evaluar la complejidad de los módulos y la arquitectura del sistema en general. <br><br>
+                
+                <b>Métricas de diseño en los componentes:</b> Estas se concentran en las características internas de los componentes del software, incluyendo la cohesión, el acoplamiento y la complejidad del módulo. <br><br>
+                
+                <b>Métricas de cohesión:</b> Evalúan cómo los elementos internos de un módulo están relacionados entre sí. <br><br>
+                
+                <b>Métricas de acoplamiento:</b> Indican la conexión de un módulo con otros módulos, datos globales y el entorno exterior. <br><br>
+                
+                <b>Métricas de complejidad:</b>  Se centran en el flujo de control del programa, donde la complejidad ciclomática es una de las más utilizadas y relacionadas con la fiabilidad del software. <br><br>
+
+                <b>Métricas de diseño de interfaz:</b> Aunque hay menos información disponible, se mencionan métricas para evaluar la calidad y facilidad de uso de las interfaces hombre-máquina, como la Conveniencia de la Representación (CR), que evalúa la facilidad con la que los usuarios pueden completar tareas en una interfaz gráfica de usuario (IGU). <br><br>
+                
+                   En resumen, las métricas de diseño de software proporcionan herramientas para evaluar y mejorar la calidad del diseño en varios aspectos, desde la estructura del programa hasta la interfaz de usuario, contribuyendo así a la evolución hacia niveles superiores de calidad. <br><br>
+                </p>
+           
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="content">
+            <h2 class="section-title">Metricas de Codigo Fuente</h2>
+            <p class="section-content">La teoría de Halstead en la ciencia del software es reconocida como una de las más importantes y estudiadas. Esta teoría asigna leyes cuantitativas al desarrollo de software, partiendo del supuesto de que el cerebro humano sigue reglas rígidas en el desarrollo de algoritmos. Halstead utiliza un conjunto de medidas primitivas para evaluar la complejidad del software, como el número de operadores y operandos, y desarrolla expresiones para estimar la longitud y el volumen del programa. <br><br>
+
+                La longitud del programa, denotada como N, se estima utilizando el número de operadores y operandos, mientras que el volumen del programa se define en función de su longitud y el número total de operadores y operandos. Halstead también introduce la noción de una relación de volumen, que compara el volumen real del programa con el volumen mínimo teórico, siendo este último siempre menor que uno. <br><br>
+                
+                Además, Halstead propone categorizar los lenguajes de programación por su nivel, siendo este una medida de abstracción en la especificación procedimental. Los lenguajes de alto nivel tienen un nivel de abstracción más alto que los lenguajes de bajo nivel, como el ensamblador. Sin embargo, hay discusión sobre si el nivel de lenguaje es constante para un lenguaje dado o si varía dependiendo del lenguaje y del programador. <br><br>
+                
+                
+                
+                </p>
+           
+        </div>
+    </section>
+
+    <section id="section5">
+        <div class="content">
+            <h2 class="section-title">Metricas para pruebas</h2>
+            <p class="section-content">El texto aborda diversas métricas relacionadas con las pruebas de software, destacando la importancia de centrarse en las características técnicas de las pruebas en lugar del proceso en sí. Se discute cómo las métricas basadas en la función pueden ayudar a predecir el esfuerzo global de las pruebas, correlacionando características a nivel de proyecto con el número de pruebas producidas. <br><br>
+
+                Se introduce la métrica "bang", que utiliza primitivas funcionales como elementos de datos, objetos, relaciones, estados y transiciones para predecir el número y tipos de pruebas necesarias. Además, se menciona la complejidad ciclomática como una métrica clave para elegir módulos para pruebas más profundas, ya que los módulos con mayor complejidad tienen más probabilidades de contener errores. <br><br>
+                
+                El texto también presenta ecuaciones para estimar el esfuerzo de las pruebas utilizando medidas de Halstead, junto con la asignación de porcentajes de esfuerzo a cada módulo. Se discuten medidas adicionales, como la amplitud y profundidad de las pruebas, así como el uso de perfiles de fallos para priorizar y categorizar los errores descubiertos. <br><br>
+                
+                En resumen, se enfatiza la importancia de utilizar métricas técnicas para planificar, ejecutar y evaluar las pruebas de software, lo que permite una mejor comprensión de la complejidad de las pruebas y una asignación eficiente de recursos.
+                
+                
+                
+                </p>
+
+        </div>
+    </section>
+
+    <section id="section6">
+        <div class="content">
+            <h2 class="section-title">Metricas de mantenimiento</h2>
+            <p class="section-content">
+                El estándar IEEE 982.1-1988 propone métricas específicas para actividades de mantenimiento de software, como el Índice de Madurez del Software (IMS), que indica la estabilidad de un producto de software según los cambios entre versiones. El IMS se calcula considerando el número de módulos en la versión actual, los módulos cambiados, añadidos y eliminados en esa versión. A medida que el IMS se acerca a 1.0, el producto tiende a estabilizarse, y esta métrica también puede utilizarse para planificar actividades de mantenimiento. Además, el IMS puede correlacionarse con el tiempo medio de producción de una versión del producto, permitiendo desarrollar modelos empíricos para el mantenimiento.</p>
+    
+        </div>
+    </section>
+</body>
+</html>
